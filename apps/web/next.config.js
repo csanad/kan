@@ -29,7 +29,8 @@ const config = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: `*.${env("NEXT_PUBLIC_STORAGE_DOMAIN")}`,
+        hostname: env("NEXT_PUBLIC_STORAGE_DOMAIN"),
+        pathname: "/kan-things-uploads/**",
       },
       {
         protocol: "http",
